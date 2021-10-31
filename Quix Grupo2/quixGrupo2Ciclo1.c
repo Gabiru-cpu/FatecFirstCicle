@@ -14,13 +14,14 @@ void bem_vindo();
 void limpar_tela();
 void menu();
 void perguntas();
-voidsair();
+void sair();
 void limpar_buffer();
 
 char nome[60], resposta;
 int r3=0;
+int i = 0, j, equal, vet[10];
 
-
+    
 float acertos = 0.0, erros = 0.0, pf;
 
 void main()
@@ -51,11 +52,6 @@ void  nome_participante()
 {
     printf("Vamos lá então, primeiramente, pode me dizer o seu nome, por favor?\n");
 gets(nome);
-while (nome < 3)
-{
-    printf("Nome muito curto ou inválido, pode me dizer o seu nome novamente?\n");
-    gets(nome);
-}
 
 printf("Olá! %s, bem-vindo mais uma vez!", nome);
 }
@@ -94,16 +90,532 @@ fflush(stdin);
 
 void perguntas()
 {
-    pergunta1();
-    pergunta2();
-    pergunta3();
-    pergunta4();
-    pergunta5();
-    pergunta6();
-    pergunta7();
-    pergunta8();
-    pergunta9();
-    pergunta10();
+	srand(time(NULL));
+
+    do{
+        vet [i] = rand() % 10;
+        equal = 0;
+        for (j = 0; j < i; j++){
+            if(vet [j] == vet [i])
+                equal = 1;
+        }
+
+        if(equal == 0)
+            i++;
+    } while (i < 10);
+
+
+	//caminho vat0
+	if(vet[0] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[0] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[0] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[0] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[0] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[0] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[0] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[0] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[0] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[0] == 9)
+	{
+		pergunta9();
+	}
+
+
+//caminho vat1
+	if(vet[1] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[1] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[1] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[1] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[1] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[1] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[1] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[1] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[1] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[1] == 9)
+	{
+		pergunta9();
+	}
+	
+//caminho vat2
+	if(vet[2] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[2] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[2] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[2] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[2] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[2] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[2] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[2] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[2] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[2] == 9)
+	{
+		pergunta9();
+	}
+    
+    //caminho vat3
+	if(vet[3] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[3] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[3] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[3] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[3] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[3] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[3] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[3] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[3] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[3] == 9)
+	{
+		pergunta9();
+	}
+	
+	//caminho vat4
+	if(vet[4] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[4] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[4] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[4] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[4] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[4] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[4] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[4] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[4] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[4] == 9)
+	{
+		pergunta9();
+	}
+	
+	//caminho vat5
+	if(vet[5] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[5] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[5] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[5] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[5] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[5] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[5] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[5] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[5] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[5] == 9)
+	{
+		pergunta9();
+	}
+	
+//caminho vat6
+	if(vet[6] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[6] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[6] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[6] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[6] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[6] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[6] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[6] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[6] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[6] == 9)
+	{
+		pergunta9();
+	}
+	
+//caminho vat7
+	if(vet[7] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[7] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[7] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[7] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[7] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[7] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[7] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[7] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[7] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[7] == 9)
+	{
+		pergunta9();
+	}
+//caminho vat8
+	if(vet[8] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[8] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[8] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[8] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[8] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[8] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[8] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[8] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[8] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[8] == 9)
+	{
+		pergunta9();
+	}
+	
+//caminho vat9
+	if(vet[9] == 0)
+	{
+		pergunta10();
+	}
+	
+	if(vet[9] == 1)
+	{
+		pergunta1();
+	}
+	
+	if(vet[9] == 2)
+	{
+		pergunta2();
+	}
+	
+	if(vet[9] == 3)
+	{
+		pergunta3();
+	}
+	
+	if(vet[9] == 4)
+	{
+		pergunta4();
+	}
+	
+	if(vet[9] == 5)
+	{
+		pergunta5();
+	}
+		
+	if(vet[9] == 6)
+	{
+		pergunta6();
+	}
+	
+	if(vet[9] == 7)
+	{
+		pergunta7();
+	}
+	
+	if(vet[9] == 8)
+	{
+		pergunta8();
+	}
+	
+	if(vet[9] == 9)
+	{
+		pergunta9();
+	}
+	
+    fim();
 }
 
 
@@ -1200,9 +1712,11 @@ if(resposta == 'd' || resposta == 'D')
     // mostrar os pontos dps printf("acertos: %.00f\n", acertos);
 }
 
-while(acertos > -5)
+}
+
+void fim()
 {
-    printf("vamos ver sua pontuação?!(responder com 's' para SIM e 'n' para NÃO se responder n ira sair do Jogo.)\n\n");
+	printf("vamos ver sua pontuação?!(responder com 's' para SIM e 'n' para NÃO se responder n ira sair do Jogo.)\n\n");
 
     limpar_buffer();
 
@@ -1211,11 +1725,9 @@ while(acertos > -5)
     if(resposta == 's' || resposta == 'S')
     {
     	limpar_buffer();
-        fim();
     }
     if(resposta == 'n' || resposta == 'N')
     {
-    	limpar_buffer();
         sair();
     }
 
@@ -1229,20 +1741,12 @@ while(acertos > -5)
 
         resposta = getchar();
 
-        if(resposta == 's' || resposta != 'S')
-        {
-            fim();
-        }
         if(resposta == 'n' || resposta != 'N')
         {
             sair();
         }
     }
-}
-}
-
-void fim()
-{
+	
     system("color 1");
     pf = acertos*1;
     limpar_buffer();
